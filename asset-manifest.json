@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SuShi/static/css/main.871a5604.css",
-    "main.js": "/SuShi/static/js/main.fd1b3738.js",
+    "main.js": "/SuShi/static/js/main.a4e1552d.js",
     "static/js/787.28cb0dcd.chunk.js": "/SuShi/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/SuShi/index.html",
     "main.871a5604.css.map": "/SuShi/static/css/main.871a5604.css.map",
-    "main.fd1b3738.js.map": "/SuShi/static/js/main.fd1b3738.js.map",
+    "main.a4e1552d.js.map": "/SuShi/static/js/main.a4e1552d.js.map",
     "787.28cb0dcd.chunk.js.map": "/SuShi/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.871a5604.css",
-    "static/js/main.fd1b3738.js"
+    "static/js/main.a4e1552d.js"
   ]
 }
