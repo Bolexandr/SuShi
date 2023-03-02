@@ -7,16 +7,17 @@ import {
 } from "react-icons/bs";
 
 const CardBox = styled.button`
-  height: 26px;
-  width: 162px;
+  height: 35px;
+  width: 100%;
   background-color: #e49f9f;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   outline: none;
   border: none;
   scale: 1;
+  padding: 0;
   :active {
     transform: scale(1.05);
     transition: all 0.3s linear;
@@ -25,8 +26,8 @@ const CardBox = styled.button`
 
 const ImageCard = styled.div`
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 33px;
+  height: 33px;
   background-color: #e1ee93;
   border-radius: 5px;
   align-items: centr;
@@ -36,7 +37,7 @@ const ImageCard = styled.div`
   overflow: hidden;
 
   img {
-    width: 25px;
+    width: 30px;
     /* height: 21px; */
   }
 `;
@@ -50,11 +51,11 @@ const Label = styled.p`
   background-color: #d9d9d9;
   border-radius: 4px;
   margin: 0;
-  width: 95px;
+  width: 129px;
   font-family: "Inter";
   font-style: italic;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 12px;
   letter-spacing: -0.075em;
 
@@ -75,9 +76,11 @@ const Price = styled.p`
   color: #12275a;
   text-align: center;
   width: 55px;
-  height: 9px;
+  height: 14px;
 `;
-const Button = styled.button`
+const Button = styled.div`
+  border: 2px solid black;
+  padding-left: 2px;
   width: 19px;
   height: 19px;
   background-color: #d9d9d9;

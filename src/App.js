@@ -7,9 +7,28 @@ import { LeftSideMenu } from "./components/Menu";
 import { SusiList } from "./components/SusiList";
 import RightSide from "./components/RightSide";
 
+// console.log(JSON.parse(localStorage.getItem("orderList")));
+const initialvalue = [
+  ...(JSON.parse(localStorage.getItem("orderList"))
+    ? JSON.parse(localStorage.getItem("orderList"))
+    : []),
+];
 class App extends Component {
   state = {
-    orderList: [],
+    orderList: [...initialvalue],
+    historiOrders: [
+      {
+        date: new Date().toLocaleDateString(),
+        summ: 1500,
+        orderListInHistoty: [
+          { id: "K00M58ORuMjhFuHcYnIz3", name: "4 сири", price: 130 },
+        ],
+      },
+    ],
+  };
+
+  toLocalStorageAdder = (key, data) => {
+    localStorage.setItem(key, JSON.stringify(data));
   };
 
   addOrderHendler = (id) => {
@@ -38,6 +57,7 @@ class App extends Component {
 
   render() {
     const totalSumm = this.countTotalPrice();
+    this.toLocalStorageAdder("orderList", this.state.orderList);
 
     return (
       <div className="App">

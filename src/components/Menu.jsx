@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const MainMenu = styled.div`
-  width: 182px;
+  width: 50vw;
   background-color: #c570c1;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 2px;
+  padding-right: 3px;
 `;
 
 export const MenuTitle = styled.div`

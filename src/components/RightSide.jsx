@@ -4,20 +4,24 @@ import { List } from "./SusiList";
 import Card from "./Card";
 import { MenuTitle } from "./Menu";
 
+const RihtSideWraper = styled.div`
+  width: 50vw;
+`;
 const OrderList = styled.div`
-  width: 196px;
-  height: 426px;
+  height: 100vh;
   overflow: scroll;
   background-color: #331b32;
   display: flex;
   flex-direction: column;
+  padding-left: 2px;
+  padding-right: 3px;
 `;
 
-const HistoryOrderList = styled.div`
-  width: 196px;
-  min-height: 260px;
-  background-color: #9477d2;
-`;
+// const HistoryOrderList = styled.div`
+//   width: 50vw;
+//   min-height: 260px;
+//   background-color: #9477d2;
+// `;
 
 // const TableHistory = styled.table`
 //   font-size: 9px;
@@ -68,10 +72,10 @@ const Info = styled.div`
 
 const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
   return (
-    <div>
+    <RihtSideWraper>
       <OrderList>
         <MenuTitle>
-          <p>Замовленя</p>
+          <p>Замовлення</p>
         </MenuTitle>
         <Info>
           <p>Сума : </p>
@@ -96,8 +100,11 @@ const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
           ))}
         </List>
       </OrderList>
-      <HistoryOrderList>
-        {/* <TableHistory>
+      {/* <HistoryOrderList>
+        <MenuTitle>
+          <p>Історія</p>
+        </MenuTitle>
+        <TableHistory>
           <tr>
             <th>Дата</th>
             <th>Сума</th>
@@ -108,9 +115,9 @@ const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
             <td>777 грн</td>
             <td>До ракушки</td>
           </tr>
-        </TableHistory> */}
-      </HistoryOrderList>
-    </div>
+        </TableHistory>
+      </HistoryOrderList> */}
+    </RihtSideWraper>
   );
 };
 

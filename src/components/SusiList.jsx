@@ -2,12 +2,13 @@ import styled from "styled-components";
 import Card from "./Card";
 
 export const List = styled.ul`
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 `;
 
 export const SusiList = ({ susiArr, onButtonHendler }) => {
