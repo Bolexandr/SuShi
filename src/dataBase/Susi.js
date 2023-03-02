@@ -25,7 +25,7 @@ const susis = [
   },
   {
     id: 4,
-    name: "ТайгерРол",
+    name: "Тайгер Рол",
     price: 195,
     photo:
       "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A2%D0%B0%D0%B9%D0%B3%D0%B5%D1%80-%D1%80%D0%BE%D0%BB-min.jpg?raw=true",
@@ -65,7 +65,7 @@ const susis = [
   },
   {
     id: 9,
-    name: "Делішеі",
+    name: "Делішеc",
     price: 155,
     photo:
       "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%94%D0%B5%D0%BB%D1%96%D1%88%D0%B5%D1%81-min.jpg?raw=trues",
