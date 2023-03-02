@@ -90,7 +90,7 @@ const Card = ({ id, title, price, imgUrl, typeButon, onButtonHendler }) => {
   return (
     <CardBox>
       <ImageCard>
-        {imgUrl === "" ? <img src={imgUrl} /> : <BsFillImageFill />}
+        {imgUrl === "" ? <img src={imgUrl} alt={title} /> : <BsFillImageFill />}
       </ImageCard>
       <LabelPriceWraper>
         <Label>{title}</Label>

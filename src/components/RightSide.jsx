@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Datetime from "react-datetime";
 
 import { List } from "./SusiList";
 import Card from "./Card";
@@ -20,20 +19,20 @@ const HistoryOrderList = styled.div`
   background-color: #9477d2;
 `;
 
-const TableHistory = styled.table`
-  font-size: 9px;
-  border: 2px solid orange;
+// const TableHistory = styled.table`
+//   font-size: 9px;
+//   border: 2px solid orange;
 
-  th,
-  td {
-    border: 1px solid black;
-  }
-  td {
-    width: 70px;
-    text-align: center;
-    font-weight: 600;
-  }
-`;
+//   th,
+//   td {
+//     border: 1px solid black;
+//   }
+//   td {
+//     width: 70px;
+//     text-align: center;
+//     font-weight: 600;
+//   }
+// `;
 
 const Info = styled.div`
   width: 88px;
