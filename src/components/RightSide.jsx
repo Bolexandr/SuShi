@@ -8,7 +8,8 @@ const RihtSideWraper = styled.div`
   width: 50vw;
 `;
 const OrderList = styled.div`
-  height: 100vh;
+  height: 100%;
+  /* height: 100vh; */
   overflow: scroll;
   background-color: #331b32;
   display: flex;
