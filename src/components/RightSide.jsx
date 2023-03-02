@@ -56,8 +56,9 @@ const Info = styled.div`
     border: none;
     scale: 1;
     background: transparent;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: bold;
+    line-height: 1;
     :active {
       transform: scale(1.05);
       transition: all 0.1s linear;
