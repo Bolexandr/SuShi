@@ -39,8 +39,8 @@ const Info = styled.div`
   height: 20px;
   margin: 0 auto 3px;
   border-radius: 5px;
-  display: flex;
-  background-color: #2d4dadb7;
+  display: inline-flex;
+  background-color: #d4ff00b7;
   justify-content: space-around;
   font-family: "Inter";
   font-style: normal;
@@ -49,11 +49,23 @@ const Info = styled.div`
   line-height: 0px;
   letter-spacing: -0.075em;
   p {
-    color: #c29ff0;
+    color: #000000;
+  }
+  button {
+    outline: none;
+    border: none;
+    scale: 1;
+    background: transparent;
+    font-size: 9px;
+    font-weight: bold;
+    :active {
+      transform: scale(1.05);
+      transition: all 0.1s linear;
+    }
   }
 `;
 
-const RightSide = ({ susiArr, totalSumm, onButtonHendler }) => {
+const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
   return (
     <div>
       <OrderList>
@@ -63,6 +75,9 @@ const RightSide = ({ susiArr, totalSumm, onButtonHendler }) => {
         <Info>
           <p>Сума : </p>
           <p>{totalSumm} грн </p>
+        </Info>
+        <Info>
+          <button onClick={clear}>Очистити список</button>
         </Info>
 
         <List>

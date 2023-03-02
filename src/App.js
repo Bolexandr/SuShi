@@ -15,8 +15,8 @@ class App extends Component {
   addOrderHendler = (id) => {
     this.setState((prewState) => ({
       orderList: [
-        ...prewState.orderList,
         { ...SusiBase.find((susha) => susha.id === id), id: nanoid() },
+        ...prewState.orderList,
       ],
     }));
   };
@@ -28,6 +28,9 @@ class App extends Component {
         ...prevState.orderList.filter(({ id }) => id !== identyficator),
       ],
     }));
+  };
+  clearOrderList = () => {
+    this.setState({ orderList: [] });
   };
 
   countTotalPrice = () =>
@@ -45,6 +48,7 @@ class App extends Component {
           ></SusiList>
         </LeftSideMenu>
         <RightSide
+          clear={this.clearOrderList}
           onButtonHendler={this.delOfOrderList}
           totalSumm={totalSumm}
           susiArr={this.state.orderList}

@@ -99,7 +99,8 @@ const susis = [
     id: 13,
     name: "Нагасакі",
     price: 165,
-    photo: "./dataBase/images",
+    photo:
+      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%9D%D0%B0%D0%B3%D0%B0%D1%81%D0%B0%D0%BA%D1%96.png?raw=true",
     ingredients: ["", ""],
   },
   {
@@ -154,7 +155,8 @@ const susis = [
     id: 20,
     name: "Х'юстон",
     price: 160,
-    photo: "./dataBase/images",
+    photo:
+      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A5'%D1%8E%D1%81%D1%82%D0%BE%D0%BD.png?raw=true",
     ingredients: ["", ""],
   },
   {
@@ -169,7 +171,8 @@ const susis = [
     id: 22,
     name: "Торі футумакі",
     price: 135,
-    photo: "./dataBase/images",
+    photo:
+      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A2%D0%BE%D1%80%D1%96-%D1%84%D1%83%D1%82%D1%83%D0%BC%D0%B0%D0%BA%D1%96.jpg?raw=true",
     ingredients: ["", ""],
   },
 ];

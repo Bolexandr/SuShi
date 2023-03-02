@@ -6,14 +6,21 @@ import {
   BsCartDash,
 } from "react-icons/bs";
 
-const CardBox = styled.div`
-  height: 23px;
+const CardBox = styled.button`
+  height: 26px;
   width: 162px;
   background-color: #e49f9f;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  outline: none;
+  border: none;
+  scale: 1;
+  :active {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+  }
 `;
 
 const ImageCard = styled.div`
@@ -26,9 +33,11 @@ const ImageCard = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
   img {
-    width: 21px;
-    height: 21px;
+    width: 25px;
+    /* height: 21px; */
   }
 `;
 
@@ -74,21 +83,20 @@ const Button = styled.button`
   background-color: #d9d9d9;
   border-radius: 5px;
   padding: 0;
-  cursor: pointer;
-  :active {
-    scale: 1.1;
-  }
-
+  scale: 1;
   svg {
     margin-top: 1px;
     width: 13px;
     height: 13px;
   }
+  :active {
+    transform: scale(1.1);
+  }
 `;
 
 const Card = ({ id, title, price, imgUrl, typeButon, onButtonHendler }) => {
   return (
-    <CardBox>
+    <CardBox onClick={() => onButtonHendler(id)}>
       <ImageCard>
         {imgUrl === "./dataBase/images" ? (
           <BsFillImageFill />
@@ -100,7 +108,7 @@ const Card = ({ id, title, price, imgUrl, typeButon, onButtonHendler }) => {
         <Label>{title}</Label>
         <Price>{price} грн</Price>
       </LabelPriceWraper>
-      <Button onClick={() => onButtonHendler(id)}>
+      <Button>
         {typeButon === "" ? (
           <BsCart />
         ) : typeButon === "plus" ? (
