@@ -18,10 +18,10 @@ const OrderList = styled.div`
   padding-right: 3px;
 `;
 
-const AddRollToBase = styled.form`
-  margin-top: auto;
-  border: 2px solid black;
-`;
+// const AddRollToBase = styled.form`
+//   margin-top: auto;
+//   border: 2px solid black;
+// `;
 // const HistoryOrderList = styled.div`
 //   width: 50vw;
 //   min-height: 260px;
@@ -109,11 +109,11 @@ const RightSide = ({
             </li>
           ))}
         </List>{" "}
-        <AddRollToBase onSubmit={addToBaseHendler}>
+        {/* <AddRollToBase onSubmit={addToBaseHendler}>
           <input type="text" name="name" /> <input type="number" name="price" />{" "}
           <input type="text" name="photo" />
           <button>Submit</button>
-        </AddRollToBase>
+        </AddRollToBase> */}
       </OrderList>
 
       {/* <HistoryOrderList>

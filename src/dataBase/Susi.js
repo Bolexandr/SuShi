@@ -180,7 +180,7 @@ const susis = [
     name: "Сенсей",
     price: 155,
     photo:
-      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A2%D0%BE%D1%80%D1%96-%D1%84%D1%83%D1%82%D1%83%D0%BC%D0%B0%D0%BA%D1%96.jpg?raw=true",
+      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A1%D0%B5%D0%BD%D1%81%D0%B5%D0%B9.jpg?raw=true",
     ingredients: ["", ""],
   },
 ];
