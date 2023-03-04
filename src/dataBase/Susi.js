@@ -162,7 +162,7 @@ const susis = [
   {
     id: 21,
     name: "Колорадо",
-    price: 180,
+    price: 160,
     photo:
       "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%9A%D0%BE%D0%BB%D0%BE%D1%80%D0%B0%D0%B4%D0%BE-min.jpg?raw=true",
     ingredients: ["", ""],
@@ -171,6 +171,14 @@ const susis = [
     id: 22,
     name: "Торі футумакі",
     price: 135,
+    photo:
+      "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A2%D0%BE%D1%80%D1%96-%D1%84%D1%83%D1%82%D1%83%D0%BC%D0%B0%D0%BA%D1%96.jpg?raw=true",
+    ingredients: ["", ""],
+  },
+  {
+    id: 23,
+    name: "Сенсей",
+    price: 155,
     photo:
       "https://github.com/Bolexandr/SuShi/blob/main/src/components/images/%D0%A2%D0%BE%D1%80%D1%96-%D1%84%D1%83%D1%82%D1%83%D0%BC%D0%B0%D0%BA%D1%96.jpg?raw=true",
     ingredients: ["", ""],

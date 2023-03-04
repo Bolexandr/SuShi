@@ -18,6 +18,10 @@ const OrderList = styled.div`
   padding-right: 3px;
 `;
 
+const AddRollToBase = styled.form`
+  margin-top: auto;
+  border: 2px solid black;
+`;
 // const HistoryOrderList = styled.div`
 //   width: 50vw;
 //   min-height: 260px;
@@ -71,7 +75,13 @@ const Info = styled.div`
   }
 `;
 
-const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
+const RightSide = ({
+  addToBaseHendler,
+  susiArr,
+  totalSumm,
+  onButtonHendler,
+  clear,
+}) => {
   return (
     <RihtSideWraper>
       <OrderList>
@@ -85,7 +95,6 @@ const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
         <Info>
           <button onClick={clear}>Очистити список</button>
         </Info>
-
         <List>
           {susiArr.map(({ id, name, price, photo }) => (
             <li key={id}>
@@ -99,8 +108,14 @@ const RightSide = ({ susiArr, totalSumm, onButtonHendler, clear }) => {
               />
             </li>
           ))}
-        </List>
+        </List>{" "}
+        <AddRollToBase onSubmit={addToBaseHendler}>
+          <input type="text" name="name" /> <input type="number" name="price" />{" "}
+          <input type="text" name="photo" />
+          <button>Submit</button>
+        </AddRollToBase>
       </OrderList>
+
       {/* <HistoryOrderList>
         <MenuTitle>
           <p>Історія</p>

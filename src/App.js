@@ -51,7 +51,20 @@ class App extends Component {
   clearOrderList = () => {
     this.setState({ orderList: [] });
   };
-
+  addToBaseHendler = (e) => {
+    e.preventDefault();
+    const { name, photo, price } = e.target.elements;
+    console.log(name.value, photo.value, price.value);
+    console.log(SusiBase.length + 1);
+    SusiBase.push({
+      id: SusiBase.length + 1,
+      name: name.value,
+      price: price.valueNumber,
+      photo: photo.value,
+      ingredients: ["", ""],
+    });
+    console.log(SusiBase);
+  };
   countTotalPrice = () =>
     this.state.orderList.reduce((acc, { price }) => (acc += price), 0);
 
@@ -72,6 +85,7 @@ class App extends Component {
           onButtonHendler={this.delOfOrderList}
           totalSumm={totalSumm}
           susiArr={this.state.orderList}
+          addToBaseHendler={this.addToBaseHendler}
         />
       </div>
     );
